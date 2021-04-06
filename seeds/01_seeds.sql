@@ -13,7 +13,7 @@ VALUES ('2020-01-04', '2020-01-10', 2, 3),
 ('2020-02-16', '2020-02-20', 1, 1),
 ('2020-03-20', '2020-03-25', 3, 2);
 
-INSERT INTO property_reviews (guest_id, property_id, reservatiion_id, message)
+INSERT INTO property_reviews (guest_id, property_id, reservation_id, message)
 VALUES (3, 2, 1, 'message'),
 (1, 1, 2, 'message'),
 (2, 3, 3, 'message');
