@@ -19,7 +19,7 @@ const users = require('./json/users.json');
  */
 const getUserWithEmail = function(email) {
   return pool.query(`
-  SELECT email
+  SELECT *
   FROM users
   WHERE email = $1;`, [email])
   .then(res => {
@@ -39,7 +39,7 @@ exports.getUserWithEmail = getUserWithEmail;
  */
 const getUserWithId = function(id) {
   return pool.query(`
-  SELECT id
+  SELECT *
   FROM users
   WHERE id =$1;`, [id])
   .then(res => {
